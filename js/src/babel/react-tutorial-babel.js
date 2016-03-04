@@ -2,7 +2,7 @@ const Hello = React.createClass({
     render: function() {
         return (
             <div>
-                {"Hello " + this.props.name + "!"}
+                <h1>{"Hello " + this.props.name + "!"}</h1>
             </div>
         );
     }
