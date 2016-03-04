@@ -5,7 +5,7 @@ const Hello = React.createClass({
     render: function() {
         return (
             <div>
-                {"Hello " + this.props.name + "! with NPM"}
+                {"Hello " + this.props.name + "!"}
             </div>
         );
     }
