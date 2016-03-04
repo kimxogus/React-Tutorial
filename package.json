@@ -7,6 +7,10 @@
     "webpack": "webpack --progress --colors"
   },
   "author": "kimxogus",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/kimxogus/React-web-tutorial"
+  },
   "license": "MIT",
   "dependencies": {
     "react": "^0.14.7",
