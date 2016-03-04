@@ -53,7 +53,7 @@ const menu = [
             },
             {
                 label: "React using Babel Watcher",
-                url: "with_npm.html"
+                url: "with_babel_watcher.html"
             },
             {
                 label: "React using Webpack",
