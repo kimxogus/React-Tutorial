@@ -2,7 +2,7 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: {
-        app: __dirname + "\\js\\src/react-tutorial.js"
+        app: __dirname + "\\js\\src/react-tutorial-webpack.js"
     },
     output: {
         path: __dirname + "/js/out",
