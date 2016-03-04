@@ -2,11 +2,11 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: {
-        app: __dirname + "\\js\\src/entry.js"
+        app: __dirname + "\\js\\src/react-tutorial.js"
     },
     output: {
         path: __dirname + "/js/out",
-        filename: "bundle.js"
+        filename: "react-tutorial-webpack.js"
     },
     module: {
         loaders: [
