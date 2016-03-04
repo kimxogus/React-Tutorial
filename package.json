@@ -1,0 +1,20 @@
+{
+  "name": "hexa-web-react-tutorial",
+  "version": "1.0.0",
+  "description": "React with nodejs Tutorial",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack --progress --colors"
+  },
+  "author": "Kimxogus",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.6.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.5.0"
+  }
+}
