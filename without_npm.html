@@ -10,8 +10,19 @@
 <body>
     <div id="container"></div>
     <script type="text/babel">
+        const Content = React.createClass({
+            render() {
+                return (
+                    <h3>Web Develop Team is the BEST!</h3>
+                );
+            }
+        });
+
         ReactDOM.render(
-            <div><h1>Hello HeXA!</h1></div>,
+            <div>
+                <h1>Hello HeXA!</h1>
+                <Content/>
+            </div>,
             document.getElementById("container")
         );
     </script>

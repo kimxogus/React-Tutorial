@@ -45,7 +45,7 @@ const MenuList = React.createClass({
 
 const menu = [
     {
-        label: "Intro",
+        label: "Tutorial",
         items: [
             {
                 label: "React not using NPM",
