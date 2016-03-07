@@ -1,9 +1,15 @@
+// Load React and ReactDOM
+// ReactDOM is rendering library of React
 const React = require('react');
 const ReactDOM = require('react-dom');
 
+// Load Content component
 const Content = require('./Content');
 
+// Creates Hello component class
 const Hello = React.createClass({
+
+    // Inside Hello component, Content is included
     render: function() {
         return (
             <div>
@@ -14,6 +20,7 @@ const Hello = React.createClass({
     }
 });
 
+// Render Hello component in DOM with id 'container'
 ReactDOM.render(
     <Hello name="HeXA"/>,
     document.getElementById("container")

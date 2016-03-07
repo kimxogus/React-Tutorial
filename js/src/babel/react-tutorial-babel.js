@@ -1,11 +1,7 @@
-const Content = React.createClass({
-    render: function() {
-        return (
-            <h3>Web Develop Team is the BEST!</h3>
-        );
-    }
-});
+// No loading React and ReactDOM.
+// They are in head in html.
 
+// Hello component
 const Hello = React.createClass({
     render: function() {
         return (
@@ -17,6 +13,7 @@ const Hello = React.createClass({
     }
 });
 
+// Rendering
 ReactDOM.render(
     <Hello name="HeXA"/>,
     document.getElementById("container")

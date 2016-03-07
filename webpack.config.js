@@ -1,19 +1,19 @@
 var webpack = require('webpack');
 
-var filename = "react-tutorial-webpack.js";
-
 module.exports = {
     entry: {
-        app: __dirname + "\\js\\src/" + filename
+        main: __dirname + "/js/src/main.js",
+        "react-tutorial-webpack": __dirname + "/js/src/react-tutorial-webpack.js",
+        UBaeZi: __dirname + "/js/src/UBaeZi/UBaeZi.js"
     },
     output: {
         path: __dirname + "/js/out",
-        filename: filename
+        filename: "[name].js"
     },
     module: {
         loaders: [
             {
-                test: /\.css$/,
+                test: /.css$/,
                 loader: "style!css"
             },
             {
@@ -21,7 +21,7 @@ module.exports = {
                 loader: 'babel-loader',
                 exclude: /node_modules/,
                 query: {
-                    presets: ['react']
+                    presets: ['es2015', 'react']
                 }
             }
         ]
