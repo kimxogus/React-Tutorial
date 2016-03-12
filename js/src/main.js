@@ -5,11 +5,13 @@ const ReactDOM = require('react-dom');
 
 const Menu = React.createClass({
     render() {
+        const { item } = this.props;
+
         return (
             <div className="row">
                 <div className="menu-item">
-                    <a href={this.props.item.url}>
-                        <span>{this.props.item.label}</span>
+                    <a href={item.url}>
+                        <span>{item.label}</span>
                     </a>
                 </div>
             </div>
@@ -19,14 +21,16 @@ const Menu = React.createClass({
 
 const Section = React.createClass({
     render() {
+        const { section } = this.props;
+
         return (
             <div className="row">
                 <div className="col-sm-3"></div>
                 <div className="col-xs-12 col-sm-6 section">
                     <div className="row section-label">
-                        {this.props.item.label}
+                        {section.label}
                     </div>
-                    {this.props.item.items.map((e)=>(<Menu key={e.label} item={e}/>))}
+                    {section.items.map((e)=>(<Menu key={e.label} item={e}/>))}
                 </div>
             </div>
         );
@@ -37,7 +41,7 @@ const MenuList = React.createClass({
     render() {
         return (
             <div className="menu">
-                {this.props.menu.map(e=>(<Section key={e.label} item={e}/>))}
+                {this.props.menu.map(e=>(<Section key={e.label} section={e}/>))}
             </div>
         )
     }
@@ -45,7 +49,7 @@ const MenuList = React.createClass({
 
 const menu = [
     {
-        label: "Tutorial",
+        label: "React Tutorial",
         items: [
             {
                 label: "React not using NPM",
