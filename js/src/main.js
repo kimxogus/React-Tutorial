@@ -49,19 +49,32 @@ const MenuList = React.createClass({
 
 const menu = [
     {
+        label: "HTML & JAVASCRIPT",
+        items: [
+            {
+                label: "HTML",
+                url: "1_html.html"
+            },
+            {
+                label: "JAVASCRIPT",
+                url: "1_javascript.html"
+            }
+        ]
+    },
+    {
         label: "React Tutorial",
         items: [
             {
                 label: "React not using NPM",
-                url: "without_npm.html"
+                url: "2_without_npm.html"
             },
             {
                 label: "React using Babel Watcher",
-                url: "with_babel_watcher.html"
+                url: "2_with_babel_watcher.html"
             },
             {
                 label: "React using Webpack",
-                url: "with_webpack.html"
+                url: "2_with_webpack.html"
             }
         ]
     },
@@ -70,7 +83,7 @@ const menu = [
         items: [
             {
                 label: "UBaeZi Example",
-                url: "ubaezi.html"
+                url: "3_ubaezi.html"
             }
         ]
     }
