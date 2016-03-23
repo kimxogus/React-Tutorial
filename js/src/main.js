@@ -65,16 +65,25 @@ const menu = [
         label: "React Tutorial",
         items: [
             {
+                label: "Practice",
+                url: "2_practice.html"
+            }
+        ]
+    },
+    {
+        label: "React Rendering Examples",
+        items: [
+            {
                 label: "React not using NPM",
-                url: "2_without_npm.html"
+                url: "3_without_npm.html"
             },
             {
                 label: "React using Babel Watcher",
-                url: "2_with_babel_watcher.html"
+                url: "3_with_babel_watcher.html"
             },
             {
                 label: "React using Webpack",
-                url: "2_with_webpack.html"
+                url: "3_with_webpack.html"
             }
         ]
     },
@@ -83,7 +92,7 @@ const menu = [
         items: [
             {
                 label: "UBaeZi Example",
-                url: "3_ubaezi.html"
+                url: "4_ubaezi.html"
             }
         ]
     }
