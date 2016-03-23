@@ -12,40 +12,11 @@
     <div id="container"></div>
     <script type="text/babel">
         const Content = React.createClass({
-            getDefaultProps: function() {
-                return {
-                    name: "Name",
-                    school: "School"
-                };
-            },
-            propTypes: {
-                name: React.PropTypes.string,
-                school: React.PropTypes.string
-            },
-            getInitialState: function() {
-                return {
-                    clicks: 0
-                };
-            },
-            render: function() {
-                return(
-                    <div>
-                        <h2> {this.props.name} @ {this.props.school}</h2>
-                        <h4>{this.state.clicks}</h4>
-                        <button type="button" onClick={this.onClick} >Increase Number</button>
-                    </div>
-                );
-            },
-            onClick: function() {
-                this.setState({
-                    clicks: this.state.clicks + 1
-                });
-            }
         });
 
 
         ReactDOM.render(
-            <Content/>,
+            <Content school="UNIST"/>,
             document.getElementById("container")
         );
     </script>
