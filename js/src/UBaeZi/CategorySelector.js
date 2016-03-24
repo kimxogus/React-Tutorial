@@ -3,6 +3,10 @@ const React = require('react');
 const categories = require('./categories');
 
 const CategorySelector = React.createClass({
+    propTypes: {
+        category: React.PropTypes.string,
+        onSelect: React.PropTypes.func
+    },
 
     onChange(e) {
         this.props.onSelect(e.target.value);
