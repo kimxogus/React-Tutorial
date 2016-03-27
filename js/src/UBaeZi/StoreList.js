@@ -1,6 +1,9 @@
 const React = require('react');
 
 const StoreList = React.createClass({
+    propTypes:{
+        stores: React.PropTypes.array
+    },
 
     onChange(e) {
         this.props.onSelect(e.target.value);
