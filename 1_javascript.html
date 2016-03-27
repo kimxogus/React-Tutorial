@@ -32,5 +32,17 @@
 <footer>
     FOOTER
 </footer>
+<script>
+    var content2_html = document.getElementById("content2").innerHTML;
+    document.getElementById("content2").innerHTML = content2_html
+            + "<br><div class='title'>TITLE</div>";
+
+    var nav = document.getElementsByTagName("nav")[0];
+    console.log(nav);
+
+    nav.onclick = function() {
+        alert("You've just clicked nav!");
+    }
+</script>
 </body>
 </html>

@@ -12,6 +12,65 @@
     <div id="container"></div>
     <script type="text/babel">
         const Content = React.createClass({
+            getDefaultProps: function() {
+                return {
+                    name: "HeXA",
+                    school: "UNIST"
+                };
+            },
+
+            propTypes: {
+                name: React.PropTypes.string,
+                school: React.PropTypes.string
+            },
+
+            getInitialState: function() {
+                return {
+                    clicks: 0
+                };
+            },
+
+            componentDidMount: function() {
+                alert("Hi");
+            },
+
+            shouldComponentUpdate: function() {
+                if(this.props.school == "UNIST") {
+                    return false;
+                } else {
+                    return true;
+                }
+            },
+
+            componentWillUpdate: function(newProps, newState) {
+                console.log("Old State", this.state);
+                console.log("New State", newState);
+                alert("Compoent is Updating");
+            },
+
+            render: function() {
+                var name = this.props.name;
+                var school = this.props.school;
+                var clicks = this.state.clicks;
+
+                return (
+                    <div>
+                        <h2>{name} @ {school}</h2>
+                        <h3>{clicks}</h3>
+                        <button
+                            type="button"
+                            onClick={this.onButtonClick} >
+                            Increase Number
+                        </button>
+                    </div>
+                );
+            },
+
+            onButtonClick: function() {
+                this.setState({
+                    clicks: this.state.clicks + 1
+                });
+            }
         });
 
 

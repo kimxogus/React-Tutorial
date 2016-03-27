@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "React with nodejs Tutorial",
   "scripts": {
-    "babel": "babel --presets react js/src/babel --out-dir js/out",
+    "babel": "babel --presets react,es2015 js/src/babel --out-dir js/out",
     "webpack": "webpack --progress --colors"
   },
   "author": "kimxogus",
