@@ -6,6 +6,8 @@ React tutorial for WEB beginners
 - Lec 1 : http://www.slideshare.net/ssuser555dd7/react-1
 - Lec 2 : http://www.slideshare.net/ssuser555dd7/react-2
 
+English Slides are in progress
+
 
 ### Lecture Contents
 1. Developing Environment Setup
@@ -15,6 +17,21 @@ React tutorial for WEB beginners
 5. React Component Lifecycle
 6. React Compile using Node.js
 7. Example
+
+
+### UBaeZi Example Compilation
+ 
+#### webpack.config.js
+ 
+ Add es2015 preset to presets array.
+ 
+ - before
+ 
+ <code> presets: ['react'] </code>
+ 
+ - after
+ 
+ <code> presets: ['es2015', 'react'] </code>
 
 
 ### Sample Page
