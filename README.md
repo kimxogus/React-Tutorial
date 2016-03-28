@@ -21,7 +21,7 @@ English Slides are in progress
 
 ### UBaeZi Example Compilation
  
-#### webpack.config.js
+##### webpack.config.js
  
  Add es2015 preset to presets array.
  
