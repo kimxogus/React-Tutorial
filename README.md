@@ -19,7 +19,9 @@ English Slides are in progress
 7. Example
 
 
-### UBaeZi Example Compilation
+### UBaeZi Example
+
+##### Required Web Browser: Chrome
  
 ##### webpack.config.js
  

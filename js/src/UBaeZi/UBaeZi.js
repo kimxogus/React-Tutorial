@@ -20,7 +20,7 @@ const UBaeZi = React.createClass({
     },
 
     loadStores(category){
-        fetch("http://ubaezi.blueberry.ml/store/" + category)
+        fetch("http://ubaezi.blueberry.ml/store/" + category + "?ref=web_react_tutorial")
             .then(res=>res.json())
             .then(data=>{
                 this.setState({
