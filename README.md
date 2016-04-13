@@ -1,4 +1,4 @@
-# React-web-tutorial
+# React Tutorial
 React tutorial for WEB beginners
 
 ### Lecture Slides (Korean)
